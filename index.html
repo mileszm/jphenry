@@ -6,8 +6,8 @@
   <meta name="description" content="JPH">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="apple-touch-icon" href="icon.png">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap">
-  <style type="text/css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald:400,700|Lora:400,700&display=swap">
+<style type="text/css">
   * {
     border: 0;
     padding: 0;
@@ -16,63 +16,130 @@
     color: inherit;
     font-family: inherit;
     font-size: inherit;
-    line-height: 1.35;
   }
-  body {
-    padding: 2rem;
+  html {
     background-color: white;
     color: dimgrey;
     font-size: 14px;
-    width: 640px;
-    max-width: 100%;
-    margin: 0 auto;
+    line-height: 1.4;
   }
-  a {
-    background-color: magenta;
+  body {
+    width: 45rem;
+    max-width: calc(100% - 12rem);
+    margin: 0 auto 0 10rem;
+  }
+  header {
+    padding: 1rem 0;
+  }
+  main a {
+    font-family: Lora, serif;
+    background-color: deeppink;
     color: white;
-    font-weight: bold;
+    font-weight: 700;
     text-decoration: none;
+    font-size: 0.85rem;
   }
-  a:hover {
-    background-color: cyan;
+  main a:hover {
+    background-color: gainsboro;
     color: black;
   }
-  li {
+  main li {
     list-style-type: none;
     margin-bottom: 0.5rem;
   }
   p {
     margin-bottom: 1rem;
+    font-family: Lora, serif;
   }
   h1 {
-    font-family: 'Bebas Neue', sans;
-    font-size: 2.4rem;
+    font-family: Oswald, sans;
+    font-weight: 700;
+    font-size: 2.2rem;
+    text-transform: uppercase;
   }
   h2 {
-    font-family: 'Bebas Neue', sans;
-    font-size: 1.6rem;
+    font-family: Oswald, sans;
+    font-size: 1.8rem;
     margin-top: 2rem;
+    font-weight: 400;
   }
   h3 {
-    color: magenta;
-    border-bottom: solid 1px magenta;
+    font-family: Oswald, sans;
+    font-size: 1rem;
+    color: deeppink;
+    border-bottom: solid 1px deeppink;
+    font-weight: 700;
   }
   h3:not(:first-of-type) {
     margin-top: 2rem;
   }
   h4 {
+    font-family: Oswald, sans;
     font-size: 0.8rem;
-    font-weight: 900;
+    font-weight: 700;
     margin-top: 1rem;
   }
-  </style>
+  header img {
+    float: right;
+    margin: 0 .7rem .7rem;
+    width: 12rem;
+    max-width: 60%;
+    box-shadow: .3rem .3rem deeppink;
+  }
+  nav li {
+    list-style-type: none;
+    font-family: Oswald, sans;
+    font-weight: 400;
+  }
+  nav a:hover, header a:hover {
+    color: deeppink;
+  }
+  nav {
+    width: 10rem;
+    padding: 1rem;
+    position: fixed;
+    left: 0;
+  }
+  a.back_top {
+    background-color: dimgrey;
+    font-family: Oswald, sans;
+    font-size: 0.6rem;
+    font-weight: 700;
+    padding: 0 .2rem;
+  }
+  @media only screen and (min-width: 540px) {
+    a.back_top {
+      display: none;
+    }
+  }
+</style>
 </head>
-<body>
-  <h1>Joseph P. Henry</h1>
-  <p>Hi, I’m a writer and Ph.D. Candidate in the art history program at the CUNY Graduate Center. My research interests have centered on German modernism; the relationship between art and labor; the history of modern painting; primitivism and race; performance; and queer visual culture. I’ve been focusing on three broader projects over the last couple of years. The first, my dissertation, argues for the structuring prominence of the machine and industrial capitalism for German Expressionism, in particular the art of Die Brücke. The second considers the estranged “thing” as a mediation of political crisis in realist modes of interwar German art. The third analyzes the appropriation of Western modernism by contemporary queer painters.</p>
-  <p>I’ve participated in the Whitney Independent Study Program, acted as Scholar-in-Residence at LACMA’s Robert Gore Rifkind Center for German Expressionist Studies, worked at the Dia Art Foundation, and taught at Brooklyn College. I’m currently living in Berlin, working on my dissertation with the support of the Deutscher Akademischer Austausch Dienst (DAAD) and sponsored by the Brücke Museum. You can find my writing, talks, and course syllabi at the menu on the left.</p>
+<body id="top">
+<nav>
+  <h3><a href="#top" style="text-decoration:none">Menu</a></h3>
+  <ul>
+    <li>Writings</li>
+      <ul style="padding-left:1rem;">
+        <li><a href="#essay">Essays and Articles</a></li>
+        <li><a href="#catalogue">Catalogue Essays</a></li>
+        <li><a href="#exhibition">Exhibition Reviews</a></li>
+        <li><a href="#performance">Performance Reviews</a></li>
+        <li><a href="#interview">Interviews</a></li>
+      </ul>
+    <li><a href="#talks">Talks and Papers</a></li>
+    <li><a href="#teaching">Teaching</a></li>
+    <li><a href="#cv">CV</a></li>
+  </ul>
+</nav>
+<header>
+  <h1 id="name">Joseph P. Henry</h1>
+  <p><img src="jph.png">Hi, I’m a writer and Ph.D. Candidate in the art history program at the CUNY Graduate Center. My research interests have centered on German modernism; the relationship between art and labor; the history of modern painting; primitivism and race; performance; and queer visual culture. I’ve been focusing on three broader projects over the last couple of years. The first, my dissertation, argues for the structuring prominence of the machine and industrial capitalism for German Expressionism, in particular the art of Die Brücke. The second considers the estranged “thing” as a mediation of political crisis in realist modes of interwar German art. The third analyzes the appropriation of Western modernism by contemporary queer painters.</p>
+  <p>I’ve participated in the Whitney Independent Study Program, acted as Scholar-in-Residence at LACMA’s Robert Gore Rifkind Center for German Expressionist Studies, worked at the Dia Art Foundation, and taught at Brooklyn College. I’m currently living in Berlin, working on my dissertation with the support of the Deutscher Akademischer Austausch Dienst (DAAD) and sponsored by the Brücke Museum. You can find my writing, talks, and course syllabi below and in the menu.</p>
+  <p>I can be emailed at <a href="mailto:jphenry19@gmail.com">jphenry19@gmail.com</a>. I’d be happy to share any texts or lecture slides otherwise not available here.</p>
+</header>
+<main>
   <h2>Writing</h2>
-    <h3>Essays and Articles</h3>
+    <h3 id="essay">Essays and Articles</h3>
       <h4>2019</h4>
       <ul>
         <li><a target="_blank" href="https://momus.ca/love-and-loneliness-queering-modernisms-in-figurative-painting/">&ldquo;Love and Loneliness: Queering Modernisms in Figurative Art,&rdquo; <em>Momus</em>, August 1</a></li>
@@ -86,8 +153,10 @@
         <li><a target="_blank" href="https://momus.ca/the-suffering-body-of-1993-whatever-happened-to-the-abject/">The Suffering Body of 1993: Whatever Happened to the Abject,&rdquo; <em>Momus</em>, April 27</a></li>
         <li><a target="_blank" href="https://momus.ca/ryan-mcnamara-and-the-afterlife-of-performance/">&ldquo;Ryan McNamara and the Afterlife of Performance,&rdquo; <em>Momus</em>, February 4</a></li>
       </ul>
-    <h3>Catalogue Essays</h3>
-    <h3>Exhibition Reviews</h3>
+    <a href="#top" class="back_top">&#x2912; Back to top</a>
+    <h3 id="catalogue">Catalogue Essays</h3>
+    <a href="#top" class="back_top">&#x2912; Back to top</a>
+    <h3 id="exhibition">Exhibition Reviews</h3>
       <h4>2017</h4>
       <ul>
         <li><a target="_blank" href="https://momus.ca/awareness-becomes-base-jens-hoffmanns-reduction-arcades-project/">&ldquo;The Arcades: Contemporary Art and Walter Benjamin&rdquo; at The Jewish Museum (New York, NY), <em>Momus</em>, June 14</a></li>
@@ -103,12 +172,14 @@
       <ul>
         <li><a target="_blank" href="https://momus.ca/nice-things-the-pleasure-principle-in-jeff-koons-and-cory-arcangel/">&nbsp;&ldquo;Jeff Koons: A Retrospective&rdquo; at the Whitney Museum of American Art (New York, NY) and Cory Arcangel, &ldquo;tl;dr&rdquo; at Team Gallery (New York, NY), <em>Momus</em>, October 15</a></li>
       </ul>
-    <h3>Performance Reviews</h3>
+    <a href="#top" class="back_top">&#x2912; Back to top</a>
+    <h3 id="performance">Performance Reviews</h3>
       <h4>2017</h4>
       <ul>
         <li><a target="_blank" href="https://canadianart.ca/features/speed-glue/">Simon Grenier-Poirier and Dorian Nuskind-Oder, &ldquo;Speed Glue&rdquo; at Wild Project (New York, NY), <em>Canadian Art</em>, November 14</a></li>
       </ul>
-    <h3>Interviews</h3>
+    <a href="#top" class="back_top">&#x2912; Back to top</a>
+    <h3 id="interview">Interviews</h3>
       <h4>2015</h4>
       <ul>
         <li><a target="_blank" href="https://momus.ca/what-instruments-have-we-a-conversation-with-emily-roysdon/">Every Ocean Hughes, <em>Momus</em>, March 10</a></li>
@@ -122,9 +193,41 @@
       <ul>
         <li><a target="_blank" href="https://believermag.com/logger/2013-06-10-interview-with-art-historian-jennifer-doyle/">Jennifer Doyle, <em>The Believer Logger</em>, June 10</a></li>
       </ul>
-  <h2>Talks and Papers</h2>
-  <h2>Teaching</h2>
-  <h2>CV</h2>
+  <h2 id="talks">Talks and Papers</h2>
+    <a href="#top" class="back_top">&#x2912; Back to top</a>
+  <h2 id="teaching">Teaching</h2>
+    <a href="#top" class="back_top">&#x2912; Back to top</a>
+  <h2 id="cv">CV</h2>
+    <a href="#top" class="back_top">&#x2912; Back to top</a>
+</main>
+<script type="text/javascript">
+function anchorLinkHandler(e) {
+    e.preventDefault();
+    const targetID = this.href.slice(this.href.indexOf("#"));
+    const element = document.querySelector(targetID);
+    const originalTop = element.getBoundingClientRect().top;
+    const originalLeft = element.getBoundingClientRect().left;
 
+    window.scrollBy({
+        top: originalTop,
+        left: originalLeft,
+        behavior: "smooth"
+    });
+
+    const checkIfDone = setInterval(function() {
+        currentTop = element.getBoundingClientRect().top;
+        currentLeft = element.getBoundingClientRect().left;
+        if (Math.floor(currentTop) === 0 && Math.floor(currentLeft) === 0) {
+            element.tabIndex = "-1";
+            element.focus();
+            clearInterval(checkIfDone);
+        }
+    }, 100);
+}
+
+const linksToAnchors = document.querySelectorAll('a[href^="#"]');
+
+linksToAnchors.forEach(each => (each.onclick = anchorLinkHandler));
+</script>
 </body>
 </html>
