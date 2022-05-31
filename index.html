@@ -279,6 +279,9 @@ const linksToAnchors = document.querySelectorAll('a[href^="#"]');
 linksToAnchors.forEach(each => (each.onclick = anchorLinkHandler));
 </script>
 <style>
+:root{
+  --main-color:#2c3756;
+}
   a.dlicon:before {
     content: "";
     display: inline-block;
@@ -324,13 +327,13 @@ body {
   margin: 0 auto 20rem 10rem;
 }
 main {
-  margin-bottom: 20rem;
+  margin-bottom: 100vh;
 }
 header {
   padding: 1rem 0;
 }
 main a {
-  background-color: firebrick;
+  background-color: var(--main-color);
   color: white;
   text-decoration: none;
 }
@@ -364,8 +367,8 @@ h2 {
 h3 {
   font-family: Oswald, sans;
   font-size: 1rem;
-  color: firebrick;
-  border-bottom: solid 1px firebrick;
+  color: var(--main-color);
+  border-bottom: solid 1px var(--main-color);
   font-weight: 700;
 }
 h3:not(:first-of-type) {
@@ -382,7 +385,7 @@ header img {
   margin: 0 .7rem .7rem;
   width: 12rem;
   max-width: 60%;
-  box-shadow: .3rem .3rem firebrick;
+  box-shadow: .3rem .3rem var(--main-color);
 }
 nav li {
   list-style-type: none;
@@ -392,7 +395,7 @@ nav li {
   padding-top: 0.4rem;
 }
 nav a:hover, header a:hover {
-  color: firebrick;
+  color: var(--main-color);
 }
 nav {
   width: 10rem;
