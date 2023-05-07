@@ -10,13 +10,11 @@
   font-family: inherit;
   font-size: inherit;
 }
-html {
+body {
   background-color: white;
   color: dimgrey;
-  font-size: 14px;
-  line-height: 1.4;
-}
-body {
+  font-size: 15px;
+  line-height: 1.5;
   width: 45rem;
   max-width: calc(100% - 12rem);
   margin: 0 auto 20rem auto;
