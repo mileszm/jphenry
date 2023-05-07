@@ -75,7 +75,7 @@ h4 {
   font-weight: 700;
   margin-top: 1rem;
 }
-header img {
+main img {
   float: right;
   margin: 0 .7rem .7rem;
   width: 12rem;
@@ -83,6 +83,11 @@ header img {
   box-shadow: .3rem .3rem var(--main-color);
 }
 nav {
+  display: flex;
+  justify-content: space-around;
+  border-bottom: 2px solid dimgray;
+  border-top: 2px solid dimgray;
+  padding: 1rem;
 }
 nav li {
   list-style-type: none;
