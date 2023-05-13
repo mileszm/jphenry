@@ -88,6 +88,27 @@ nav a:hover {
   color: var(--main-color);
 }
 
+@media (min-width: 720px) {
+  nav .break {
+    display: none;
+  }
+}
+@media (max-width: 719px) {
+  nav .break {
+    flex-basis: 100%;
+    margin-bottom: 0.5rem;
+  }
+  nav {
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  nav a{
+    width: 42%;
+    text-align: center;
+  }
+}
+
+
 
 
 /* NARROW LAYOUT */
